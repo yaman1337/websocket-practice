@@ -1,6 +1,7 @@
 const io = require('socket.io')(3000, {
     cors: {
-        origin: ['http://04f6-103-104-30-135.ngrok.io','http://localhost:5500','https://admin.socket.io/','https://04f6-103-104-30-135.ngrok.io/']
+//         add your client domain name here
+        origin: ['http://localhost:5500','http://127.0.0.1:5000','https://admin.socket.io/']
     }
 })
 
