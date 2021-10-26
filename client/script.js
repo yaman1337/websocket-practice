@@ -5,10 +5,9 @@ socket.on('connect', () => {
     console.log(socket)
 })
 
-socket.on('received', text => {
-    sycnText(text)
+socket.on('received', syncedText => {
+    sycnText(syncedText)
 })
-
 
 textarea.addEventListener('keydown', typingListener)
 
@@ -16,6 +15,6 @@ function typingListener() {
    socket.emit('typing', textarea.value)
 }
 
-function sycnText(text) {
+function sycnText(newText) {
     textarea.value = text
 }
