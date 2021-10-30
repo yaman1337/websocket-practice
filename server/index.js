@@ -8,10 +8,17 @@ const io = require('socket.io')(3000, {
 const { instrument } = require('@socket.io/admin-ui')
 
 io.on('connection', (socket) => {
-    console.log(socket.id)
+   try {
+     console.log(socket.id)
     socket.on('typing', textFromClient => {
         socket.broadcast.emit('received', textFromClient)
     })
+   }
+    catch(err) {
+        console.log(err)
+        socket.emit('error', {msg: "Internal server error.", success: false })
+    }
 })
+
 
 instrument(io, {auth: false})
