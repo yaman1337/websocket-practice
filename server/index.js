@@ -21,4 +21,7 @@ io.on('connection', (socket) => {
 })
 
 
+env =  process.env.ENV || 'dev'
+if (env === 'dev') {console.log('Running in development server...')}
+else {console.log('Running in production server ...')}
 instrument(io, {auth: false})
