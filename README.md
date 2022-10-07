@@ -1,4 +1,7 @@
-# WebSockets practice
+# Chat Application Using Websockets
+
+> How to use ?
+
 - Make sure you have installed latest version of node js
 - Clone this repo
 - Go to client folder and open the index.html in live server
