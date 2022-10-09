@@ -9,7 +9,6 @@ const { instrument } = require('@socket.io/admin-ui')
 
 io.on('connection', (socket) => {
    try {
-     console.log(socket.id)
     socket.on('typing', textFromClient => {
         socket.broadcast.emit('received', textFromClient)
     })
