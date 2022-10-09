@@ -1,4 +1,4 @@
-# A  Chat Application with Nodejs and Reactjs
+# A  Chat Application with Nodejs and React
 
 # Chat Application Using Websockets
 
