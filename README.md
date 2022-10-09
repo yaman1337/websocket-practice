@@ -1,6 +1,6 @@
 # Chat Application Using Websockets
 
-> How to use ?
+> How to use the application in local environment ?
 
 - Make sure you have installed latest version of node js
 - Clone this repo
